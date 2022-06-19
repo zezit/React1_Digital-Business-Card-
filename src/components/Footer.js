@@ -1,8 +1,8 @@
 import React from "react";
-import facebook_icon from "../images/Facebook Icon.png";
-import twiter_icon from "../images/Twitter Icon.png";
-import instagram_icon from "../images/Instagram Icon.png";
-import github_icon from "../images/GitHub Icon.png";
+import facebook_icon from "../images/Facebook Icon.svg";
+import twiter_icon from "../images/Twitter Icon.svg";
+import instagram_icon from "../images/Instagram Icon.svg";
+import github_icon from "../images/GitHub Icon.svg";
 
 export default function Footer() {
     return (

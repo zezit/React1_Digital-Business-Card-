@@ -22,7 +22,7 @@ body {
 
     width: 317px;
     height: 780px;
-    background-color: #1A1B21;
+    background-color: #1a1b21;
     border-radius: 10px;
 }
 
@@ -39,32 +39,107 @@ body {
     object-fit: cover;
 }
 
-.Card--data{
+.Card--data {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 26px;
 }
 
-.Card--data .name{
+.Card--data .name {
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    margin-bottom: 8px;
 }
 
-.Card--data .ocupation{
+.Card--data .ocupation {
     font-size: 12.8px;
-    color: #F3BF99;
+    color: #f3bf99;
+    margin-bottom: 15px;
 }
 
-.Card--data a{
+.Card--data a {
     font-size: 10.24px;
     color: #f5f5f5;
     text-decoration: none;
+    margin-bottom: 15px;
 }
 
-footer{
+.Card--contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 25px;
+    margin-bottom: 32px;
+}
+
+.Card--contact a {
+    border-radius: 6px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 115px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Card--contact img {
+    width: 16px;
+}
+
+.Card--email {
+    padding: 0 26px;
+    color: #374151;
+    background-color: #ffffff;
+}
+
+.Card--linkedin {
+    padding: 0 15px;
+    color: #fff;
+    background-color: #5093e2;
+}
+
+.Card--texts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 37px;
+    min-width: 247px;
+}
+
+.Card--texts h3 {
+    font-size: 16px;
+    color: #f5f5f5;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.Card--texts p {
+    line-height: 150%;
+    font-size: 10.24px;
+    color: #dcdcdc;
+    font-weight: 400;
+}
+
+.Card--interests {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #161619;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 73px;
+}
+
+footer img {
+    width: 25px;
+    border-radius: 2px;
 }
