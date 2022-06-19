@@ -1,13 +1,28 @@
+:root {
+    --body-backgroud: #23252c;
+    --card-backgroud: #1a1b21;
+    --name: #fff;
+    --background-email: #fff;
+    --ocupation: #f3bf99;
+    --almost-white: #f5f5f5;
+    --email: #374151;
+    --paragraphs: #dcdcdc;
+    --footer-background: #161619;
+    --border-contact: #d1d5db;
+    --svg-fill: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     font-family: Inter, sans-serif;
+    transition: all 0.2s ease-out;
 }
 
 body {
-    background-color: #23252c;
+    background-color: var(--body-backgroud);
     padding: 2%;
 }
 
@@ -22,7 +37,7 @@ body {
 
     width: 317px;
     height: 780px;
-    background-color: #1a1b21;
+    background-color: var(--card-backgroud);
     border-radius: 10px;
 }
 
@@ -49,19 +64,19 @@ body {
 .Card--data .name {
     font-size: 25px;
     font-weight: bold;
-    color: #fff;
+    color: var(--name);
     margin-bottom: 8px;
 }
 
 .Card--data .ocupation {
     font-size: 12.8px;
-    color: #f3bf99;
+    color: var(--ocupation);
     margin-bottom: 15px;
 }
 
 .Card--data a {
     font-size: 10.24px;
-    color: #f5f5f5;
+    color: var(--almost-white);
     text-decoration: none;
     margin-bottom: 15px;
 }
@@ -75,6 +90,7 @@ body {
 }
 
 .Card--contact a {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     text-decoration: none;
     display: flex;
@@ -91,14 +107,15 @@ body {
 }
 
 .Card--email {
+    border: 1px solid var(--border-contact);
     padding: 0 26px;
-    color: #374151;
-    background-color: #ffffff;
+    color: var(--email);
+    background-color: var(--background-email);
 }
 
 .Card--linkedin {
     padding: 0 15px;
-    color: #fff;
+    color: var(--background-email);
     background-color: #5093e2;
 }
 
@@ -111,7 +128,7 @@ body {
 
 .Card--texts h3 {
     font-size: 16px;
-    color: #f5f5f5;
+    color: var(--almost-white);
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -119,7 +136,7 @@ body {
 .Card--texts p {
     line-height: 150%;
     font-size: 10.24px;
-    color: #dcdcdc;
+    color: var(--paragraphs);
     font-weight: 400;
 }
 
@@ -131,7 +148,7 @@ body {
 footer {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #161619;
+    background-color: var(--footer-background);
     height: 64px;
     display: flex;
     align-items: center;
@@ -142,4 +159,86 @@ footer {
 footer img {
     width: 25px;
     border-radius: 2px;
+    cursor: pointer;
+    fill: var(--svg-fill);
+}
+
+.dark-mode {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    max-width: 140px;
+    margin: 13px 13px;
+    top: 0;
+    left: 0;
+}
+.dark-mode img {
+    width: 28px;
+    filter: invert(0.8);
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    max-width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--footer-background);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 5px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: var(--ocupation);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--ocupation);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
