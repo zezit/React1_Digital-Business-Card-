@@ -20,7 +20,7 @@ export default function Card() {
                 <a href="mailto:jvictormmendesd@gmail.co?subject=Hello!" className="Card--email">
                     <img src={mail} alt="profile" /> Email
                 </a>
-                <a href="https://www.linkedin.com/in/josevmendes/" target="_blank" className="Card--linkedin">
+                <a href="https://www.linkedin.com/in/josevmendes/" target="_blank" rel="noreferrer" className="Card--linkedin">
                     <img src={linkedin} alt="profile" />
                     Linkedin
                 </a>
