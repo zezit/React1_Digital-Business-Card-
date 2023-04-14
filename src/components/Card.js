@@ -12,15 +12,15 @@ export default function Card() {
                 <img src={profilePicture} alt="profile" />
             </div>
             <div className="Card--data">
-                <p className="name">Mikky Ekko</p>
+                <p className="name">José Victor</p>
                 <p className="ocupation">Frontend Developer</p>
-                <a href="#">ekkomikky.website</a>
+                {/* <a href="github.com./zezit">GitHub</a> */}
             </div>
             <div className="Card--contact">
-                <a href="#" className="Card--email">
+                <a href="mailto:jvictormmendesd@gmail.co?subject=Hello!" className="Card--email">
                     <img src={mail} alt="profile" /> Email
                 </a>
-                <a href="#" className="Card--linkedin">
+                <a href="https://www.linkedin.com/in/josevmendes/" target="_blank" className="Card--linkedin">
                     <img src={linkedin} alt="profile" />
                     Linkedin
                 </a>
